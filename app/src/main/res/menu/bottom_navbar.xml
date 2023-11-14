@@ -15,11 +15,4 @@
         android:icon="@drawable/catching_pokemon"
         />
 
-    <item
-        android:id="@id/gameModeFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:title="GameMode"
-        android:icon="@drawable/fightpokemon"
-        />
 </menu>

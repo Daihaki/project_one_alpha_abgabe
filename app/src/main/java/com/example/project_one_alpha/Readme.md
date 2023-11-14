@@ -20,4 +20,5 @@ Team aus mein 6 lieblings Pokemon erstellen kann.
 
 - zusammengestelltes Team bleibt nicht gespeichert wenn man das Fragment verlässt
 
-**✌**
+**Nutzer Anleitung**
+
