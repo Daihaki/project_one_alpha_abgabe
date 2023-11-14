@@ -12,6 +12,7 @@
         android:layout_height="match_parent">
 
         <GridLayout
+
             android:id="@+id/gridLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -112,7 +113,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="PokemonTeams"
+            android:text="Teams"
+            android:textColor="@color/black"
+            android:fontFamily="@font/asset"
             android:textSize="32sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
