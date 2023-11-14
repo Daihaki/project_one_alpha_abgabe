@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/pokedexFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Pokédex"
+        android:icon="@drawable/pokedexicon"/>
+    <item
+        android:id="@id/pokeTeamsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Teams"
+        android:icon="@drawable/catching_pokemon"
+        />
+
+    <item
+        android:id="@id/gameModeFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="GameMode"
+        android:icon="@drawable/fightpokemon"
+        />
+</menu>

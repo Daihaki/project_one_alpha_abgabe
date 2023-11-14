@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pokedexFragment">
+
+    <fragment
+        android:id="@+id/gameModeFragment"
+        android:name="com.example.project_one_alpha.ui.GameModeFragment"
+        android:label="fragment_game_mode"
+        tools:layout="@layout/fragment_game_mode" >
+        <action
+            android:id="@+id/action_gameModeFragment_to_pokeTeamsFragment"
+            app:destination="@id/pokeTeamsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokeTeamsFragment"
+        android:name="com.example.project_one_alpha.ui.PokemonTeamsFragment"
+        android:label="fragment_poke_teams"
+        tools:layout="@layout/fragment_pokemon_teams" />
+    <fragment
+        android:id="@+id/pokedexFragment"
+        android:name="com.example.project_one_alpha.ui.PokedexFragment"
+        android:label="PokedexFragment" >
+        <action
+            android:id="@+id/action_pokedexFragment_to_pokemonDetailsFragment"
+            app:destination="@id/pokemonDetailsFragment" />
+        <action
+            android:id="@+id/action_pokedexFragment_to_pokeTeamsFragment"
+            app:destination="@id/pokeTeamsFragment" />
+        <action
+            android:id="@+id/action_pokedexFragment_to_gameModeFragment"
+            app:destination="@id/gameModeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonDetailsFragment"
+        android:name="com.example.project_one_alpha.ui.PokemonDetailsFragment"
+        android:label="fragment_pokemon_details"
+        tools:layout="@layout/fragment_pokemon_details" >
+        <argument
+            android:name="pokemonID"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonAuswahlFragment"
+        android:name="com.example.project_one_alpha.ui.PokemonSelectionFragment"
+        android:label="fragment_pokemon_auswahl"
+        tools:layout="@layout/fragment_pokemon_selection" />
+</navigation>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_prairie">
+
+    <TextView
+        android:id="@+id/pokemonDetailsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Details"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pokemonSpriteIV"
+        android:layout_width="320dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonNameTV"
+        tools:src="@drawable/gangsterchu" />
+
+    <TextView
+        android:id="@+id/type1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="type1TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/pokemonSpriteIV"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonSpriteIV" />
+
+    <TextView
+        android:id="@+id/type2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="type2TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/pokemonSpriteIV"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonSpriteIV" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pokemonMoveRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type1TextView" />
+
+    <ProgressBar
+        android:id="@+id/movesProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type1TextView" />
+
+    <TextView
+        android:id="@+id/pokemonIdTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:text="#000"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/pokemonSpriteIV"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonDetailsTV" />
+
+    <TextView
+        android:id="@+id/pokemonNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:text="PokemonName"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pokemonIdTV"
+        app:layout_constraintEnd_toEndOf="@+id/pokemonSpriteIV"
+        app:layout_constraintStart_toStartOf="@+id/pokemonSpriteIV"
+        app:layout_constraintTop_toTopOf="@+id/pokemonIdTV" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/arrowback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
