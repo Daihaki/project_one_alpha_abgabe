@@ -46,6 +46,11 @@ class MainViewModel (app: Application) : AndroidViewModel(app) {
 
         _moves.value = LoadMovesState.Loading
 
+        // hier wird gesagt dass er mir alle Moves des Pokemons holen soll und
+        // damit es nicht ewig dauert wird es in einer Curoutine gemacht werden soll, da einige
+        // Pokemon bis zu 100 Moves haben und er soll mir alle zurrückgeben wenn das letzte
+        // von der API geladen wurde
+
         viewModelScope.launch(Dispatchers.IO) {
             val allMoves = moves.map {
                 async {

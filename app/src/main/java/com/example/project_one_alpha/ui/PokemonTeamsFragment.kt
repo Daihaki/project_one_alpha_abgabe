@@ -27,6 +27,8 @@ class PokemonTeamsFragment : Fragment(), PokemonSelectionFragment.OnSelectionLis
         return binding.root
     }
 
+    // Hier wird dem Gridlayout gesagt das es bei der auswahl eines Pokemons der "add-Button"
+    // ersetzt wird durch das Bild des gewählten Pokemons
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -39,6 +41,7 @@ class PokemonTeamsFragment : Fragment(), PokemonSelectionFragment.OnSelectionLis
             }
         }
 
+        // hier wird jeden "add_pokemon_button" ein OnClickListener gegeben damit die auch alle klickbar sind
         (0 until binding.gridLayout.childCount).map { index ->
             binding.gridLayout.getChildAt(index)
                 ?.findViewById<ImageView>(R.id.add_pokemon_button)

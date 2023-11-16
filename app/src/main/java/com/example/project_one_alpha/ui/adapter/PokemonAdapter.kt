@@ -43,8 +43,8 @@ class PokemonAdapter(
         val pokemon = pokemonList[position]
         Log.d("PokemonLog", "$pokemon")
 
-        holder.binding.pokemonIdTV.text = pokemon.pokemonDb.id.toString()
-        holder.binding.pokemonNameTV.text = pokemon.pokemonDb.name
+        holder.binding.pokemonIdTV.text = "#" + pokemon.pokemonDb.id.toString().padStart(3, '0')
+        holder.binding.pokemonNameTV.text = pokemon.pokemonDb.name.replaceFirstChar { it.uppercase() }
         holder.binding.pokemonSpriteIV.load(pokemon.pokemonDb.spriteUrl)
     }
 }

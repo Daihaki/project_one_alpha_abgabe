@@ -37,7 +37,7 @@ class PokemonDetailsFragment : Fragment() {
         viewModel.loadPokemonWithId(args.pokemonID).observe(viewLifecycleOwner) {
             viewModel.loadMoves(it.pokemonMove)
 
-            binding.pokemonNameTV.text = it.pokemonDb.name
+            binding.pokemonNameTV.text = it.pokemonDb.name.replaceFirstChar { it.uppercase() }
             binding.pokemonIdTV.text = "#" + it.pokemonDb.id.toString().padStart(3, '0')
             binding.pokemonSpriteIV.load(it.pokemonDb.spriteUrl)
             binding.type1TextView.text = it.types.getOrNull(0)?.name ?: "No type"

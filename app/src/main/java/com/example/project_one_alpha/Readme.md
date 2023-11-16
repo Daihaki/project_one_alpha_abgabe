@@ -16,9 +16,14 @@ Team aus mein 6 lieblings Pokemon erstellen kann.
 - Detail Ansicht mit der jeweiligen Pokemon mit allen für das Pokemon verfügbaren attacken, dessen Typen, Bild, Name und ID
 - möglichkeit ein Team mit 6 Pokemon aus den den 151 auszuwählen
 
-**Besetehende Probleme**
+**Besetehende Probleme und ToDos**
 
 - zusammengestelltes Team bleibt nicht gespeichert wenn man das Fragment verlässt
+- "Typen" in einer jeweiligen farbe anzeigen, zb. Feuer - Rot , Wasser - Blau usw.
 
 **Nutzer Anleitung**
 
+- Die App Startet direkt mit dem Pokedex
+- durch scrollen kann man alle Verfügbaren Pokemon durchgehen
+- durch klicken auf Pokemon wird Detailansicht geöffnet
+- durch das Klicken in der Bottom-Navbar wird die seite gewechselt

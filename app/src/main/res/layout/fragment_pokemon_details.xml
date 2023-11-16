@@ -8,13 +8,15 @@
 
     <TextView
         android:id="@+id/pokemonDetailsTV"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:gravity="center"
         android:text="Details"
         android:textSize="32sp"
         android:textStyle="bold"
+        android:fontFamily="@font/asset"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,10 +36,12 @@
 
     <TextView
         android:id="@+id/type1TextView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_corner"
         android:text="type1TextView"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/pokemonSpriteIV"
@@ -45,13 +49,17 @@
 
     <TextView
         android:id="@+id/type2TextView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="40dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_corner"
         android:text="type2TextView"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/pokemonSpriteIV"
+        app:layout_constraintStart_toEndOf="@+id/type1TextView"
         app:layout_constraintTop_toBottomOf="@+id/pokemonSpriteIV" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -80,10 +88,11 @@
 
     <TextView
         android:id="@+id/pokemonIdTV"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
+        android:gravity="right"
         android:text="#000"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="@+id/pokemonSpriteIV"
@@ -91,14 +100,15 @@
 
     <TextView
         android:id="@+id/pokemonNameTV"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="118dp"
+        android:layout_marginStart="8dp"
+        android:gravity="left"
         android:text="PokemonName"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/pokemonIdTV"
         app:layout_constraintEnd_toEndOf="@+id/pokemonSpriteIV"
-        app:layout_constraintStart_toStartOf="@+id/pokemonSpriteIV"
+        app:layout_constraintStart_toEndOf="@+id/pokemonIdTV"
         app:layout_constraintTop_toTopOf="@+id/pokemonIdTV" />
 
     <Button
