@@ -1,6 +1,6 @@
 ***Android Abschluss Project***
 
-**Project_One_Alpha**
+**Project_One_Alpha - Pokédex**
 
 Yoar, das ist mein Android-Kotlin AbschlussProject um den Kurs in der Weiterbildung zu bestehen.
 Ich hatte einen großen Plan, aber um diesen umzusetzen würde ich ein Team und
@@ -13,7 +13,7 @@ Team aus mein 6 lieblings Pokemon erstellen kann.
 **Funktionen**
 
 - Pokedex mit 151 Pokemon
-- Detail Ansicht mit der jeweiligen Pokemon mit allen für das Pokemon verfügbaren attacken, dessen Typen, Bild, Name und ID
+- Detail Ansicht mit der jeweiligen Pokemon mit allen für das Pokemon, alle verfügbaren attacken, dessen Typen, Bild, Name und ID
 - möglichkeit ein Team mit 6 Pokemon aus den den 151 auszuwählen
 
 **Besetehende Probleme und ToDos**

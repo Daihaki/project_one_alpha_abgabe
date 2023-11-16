@@ -23,6 +23,7 @@ class MainViewModel (app: Application) : AndroidViewModel(app) {
     private val repository = Repository(PokeApi.retrofitService, getDatabase(app))
     val pokemons: LiveData<List<Pokemon>> = repository.pokemons
 
+    //
     private val _moves = MutableLiveData<LoadMovesState>()
     val moves: LiveData<LoadMovesState> = _moves
 

@@ -42,6 +42,7 @@ class PokemonTeamsFragment : Fragment(), PokemonSelectionFragment.OnSelectionLis
         }
 
         // hier wird jeden "add_pokemon_button" ein OnClickListener gegeben damit die auch alle klickbar sind
+        // "childCount" weiss wie viele elemente ich im Gridlayout habe "in diesem fall sind es 6"
         (0 until binding.gridLayout.childCount).map { index ->
             binding.gridLayout.getChildAt(index)
                 ?.findViewById<ImageView>(R.id.add_pokemon_button)

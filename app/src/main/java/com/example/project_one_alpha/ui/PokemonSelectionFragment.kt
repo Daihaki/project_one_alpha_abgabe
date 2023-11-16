@@ -43,7 +43,10 @@ class PokemonSelectionFragment(
                     orientation = LinearLayoutManager.VERTICAL
                 }
 
+                // hier erstelle ich eine neue liste für das PokemonTeam
                 val list = viewModel.selectedPokemonsForTeam
+
+                // hier wird mir die liste zurück gegeben wo die Pokemon im Team ausgefiltert werden
                 val filteredPokemons = it.filterNot {
                     list.contains(it.pokemonDb.id)
                 }

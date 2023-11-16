@@ -7,12 +7,16 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.project_one_alpha.databinding.PokemonItemBinding
 import com.example.project_one_alpha.db.datamodel.Pokemon
-import com.example.project_one_alpha.ui.PokedexFragment
 
 class PokemonAdapter(
     val pokemonList: List<Pokemon>,
     private val clickListener: PokemonClickListener,
 ) : RecyclerView.Adapter<PokemonAdapter.PokemonViewHolder>() {
+
+    val germanPokeNames = mutableListOf<String>()
+
+
+
 
     inner class PokemonViewHolder(val binding: PokemonItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
